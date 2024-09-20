@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  height: calc(100svh - 60px);
+}
+
+.relative {
+  position: relative;
+}
+
+html {
+  background-color: #f9f9f9;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #7091e6;
+  color: #fff;
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  nav {
+    margin-left: 45px;
+
+    li {
+      display: inline;
+    
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+  
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    li + li {
+      margin-left: 15px;
+    }
+  }
+  
+  input[type=text] {
+    width: 300px;
+    height: 35px;
+    padding: 0 15px 0 38px;
+    margin-top: 12.5px;
+    position: absolute;
+    inset:  auto 0px auto auto;
+    font-size: 1.7rem;
+    background: #fff url(../img/search-icon.png) no-repeat 15px 15px;
+    background-position: 15px center; 
+    background-size: 15px;
+    border: 1px solid #808080;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  input[type=text]:focus {
+      border: 1px solid #5a5a5a;
+  }
+}
+
+
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: auto;
+  min-width: 400px;
+
+
+  thead {
+    text-align: left;
+
+    th {
+      padding: 12px 15px;
+      font-size: 1.3rem;
+      color: #646464;
+      font-weight: 500;
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: #fff;
+      border-bottom: 5px solid #f9f9f9;
+    }
+
+    td {
+      padding: 14px 19px;
+      font-size: 1.7rem;
+      font-weight: 400;
+
+      a {
+        width: 100px;
+        color: #646464;
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 7px 20px;
+        background-color: #efefef;
+        border-radius: 50px;
+      }
+
+      a:hover {
+        scale: 1.01;
+        background-color: #dbdbdb;
+      }
+    }
+
+    .icon {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    
+    .icon-u { color: #57aed5; }
+
+    .icon-u::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #e2f2fd;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+ 
+    .icon-a { color: #df9090; }
+
+    .icon-a::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #ffebee;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+ 
+    .icon-c { color: #8eb878; }
+
+    .icon-c::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #e8f4e9;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  
+    .icon-m { color: #8590cf; }
+
+    .icon-m::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #e8e7f8;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+      
+    .icon-v { color: #d1ac54; }
+
+    .icon-v::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: #fff3e0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+}

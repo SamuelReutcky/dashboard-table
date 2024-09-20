@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devicewidth, initial-scale=1" />
+    <meta name="author" content="Samuel Reutcky" />
+    <meta name="description" content="My Web Project" />
+    <meta name="keywords" content="html, css, seo, web devlopment" />
+    <title>Table</title>
+    <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css"
+      media="all"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container flex relative">
+        <div>
+          <h1>Samuel Reutcky</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Layout</a></li>
+          </ul>
+        </nav>
+        <input type="text" name="search" placeholder="Search" />
+      </div>
+    </header>
+    <main>
+      <div class="container flex center">
+        <table>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th>DATA TYPE</th>
+              <th>TOTAL</th>
+              <th>LAST 7 DAYS</th>
+              <th>LAST RECORD</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="icon icon-u">U</td>
+              <td>Registered Users</td>
+              <td>138</td>
+              <td>9</td>
+              <td>May 7</td>
+              <td><a href="#">Show more</a></td>
+            </tr>
+            <tr>
+              <td class="icon icon-a">A</td>
+              <td>Published articles</td>
+              <td>79</td>
+              <td>3</td>
+              <td>May 13</td>
+              <td><a href="#">Show more</a></td>
+            </tr>
+            <tr>
+              <td class="icon icon-c">C</td>
+              <td>Authors</td>
+              <td>21</td>
+              <td>1</td>
+              <td>Apr 12</td>
+              <td><a href="#">Show more</a></td>
+            </tr>
+            <tr>
+              <td class="icon icon-m">M</td>
+              <td>Messages</td>
+              <td>12</td>
+              <td>2</td>
+              <td>May 21</td>
+              <td><a href="#">Show more</a></td>
+            </tr>
+            <tr>
+              <td class="icon icon-v">V</td>
+              <td>Visits</td>
+              <td>895</td>
+              <td>46</td>
+              <td>May 22</td>
+              <td><a href="#">Show more</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
